@@ -66,7 +66,7 @@ Think of a **template** as a *mold*, the **data** passed in as *plastic* poured 
 
 ## Explore Handlebars
 
-We'll use the [HTML strings lab](https://github.com/SF-WDI-LABS/html_strings) as our starting point. Check out the `solution` branch.
+We'll use the [HTML strings lab](https://github.com/SF-WDI-LABS/html_strings) as our starting point. Check out the `handlebars` branch.
 
 ### What is happening in `index.html`?
 
@@ -107,7 +107,7 @@ We'll use the [HTML strings lab](https://github.com/SF-WDI-LABS/html_strings) as
 
 ## General Handlebars Setup Steps
 
-**with `http://daretoexplore.herokuapp.com/books` examples**
+**with [http://daretoexplore.herokuapp.com/books](http://daretoexplore.herokuapp.com/books) examples**
 
 1. Add the Handlebars CDN to your `index.html` (remember you can go to <a href="https://cdnjs.com">cdnjs</a> to search for CDNs). Make sure to require Handlebars before your custom script file.
 
