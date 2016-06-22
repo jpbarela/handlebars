@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Student GitHub Accounts</title>
-
-    <!-- STYLESHEETS -->
+<html>
+<head>
+	<title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
-    <!-- VENDOR SCRIPTS -->
-    <!-- jquery -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <!-- handlebars -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
-    <!-- APPLICATION SCRIPTS -->
-    <script src="js/app.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-        
-          <h1>We are on track!</h1>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
 
-          <ul id="students-list" class="list-group">
-            <!-- handlebars template for inside of students list -->
-            <script id="student-li-template" type="text/x-handlebars-template">
-              {{#each students}}
-                <li class="list-group-item">
-                  <a href="https://www.github.com/{{github_username}}" target="_blank"><strong>{{first_name}} {{last_name}}</strong></a>
-                </li>
-              {{/each}}
-            </script>
-          </ul>
+  <!-- handlebars -->
+
+
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div id="results">
+       
+          <script id="books-template" type="text/x-handlebars-template">
+            {{#each book}}
+              <p><strong>{{title}}</strong> | by {{author}}</p>
+            {{/each}}
+          </script>
+
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+
+</body>
 </html>
